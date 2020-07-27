@@ -11,5 +11,5 @@ Start 20.07.24 ~
 |Date|Description|Remark|
 |:---:|:---|---|
 |07_24|Start Project||
-|07_24|[Data request](./Progress img)|[질병관리본부](https://chs.cdc.go.kr/chs/rdr/rdrInfoProcessMain.do)|
+|07_24|[Data request](./Progress_img)|[질병관리본부](https://chs.cdc.go.kr/chs/rdr/rdrInfoProcessMain.do)|
 |07_27|Data Transformation|.txt -> .csv|
