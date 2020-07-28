@@ -5,7 +5,6 @@
 ### 결측치 확인
 ```
 busan_08.isna().sum()
-fma_07z1         31
 Out[]:
 id                0     fma_12z1         44     fma_20z1         46
 city_cd           0     bogun_cd          0     jijum_cd          0
