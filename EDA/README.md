@@ -5,43 +5,20 @@
 ### 결측치 확인
 ```
 busan_08.isna().sum()
-Out[7]:
-id                0
-fma_12z1         44
-fma_20z1         46
-city_cd           0
-bogun_cd          0
-jijum_cd          0
-gagu_cd           0
-gaguw_cd          0
-town_t            0
-apt_t             0
-sex               0
-age               0
-fma_01z1         31
-fma_02z1         29
-fma_19z1         33
-fma_04z1         31
-fma_05z1         34
-fma_06z1         76
 fma_07z1         31
-fma_08z1         33
-fma_10z1         34
-wt_house          0
-qoa_01z1          2
-asa_01z1          2
-asa_02z1          2
-asa_03z1          2
-asa_04z1          2
-hya_01z1          1
-hya_02z1          1
-hya_03z1          1
-hya_04z1          1
-hya_05z1          8
-hya_06z1          7
-hya_07z1          1
-hya_08z1          1
-lia_01z1          1
+Out[]:
+id                0     fma_12z1         44     fma_20z1         46
+city_cd           0     bogun_cd          0     jijum_cd          0
+gagu_cd           0     gaguw_cd          0     town_t            0
+apt_t             0     sex               0     age               0
+fma_01z1         31     fma_02z1         29     fma_19z1         33
+fma_04z1         31     fma_05z1         34     fma_06z1         76
+fma_07z1         31     fma_08z1         33     fma_10z1         34
+wt_house          0     qoa_01z1          2     asa_01z1          2
+asa_02z1          2     asa_03z1          2     asa_04z1          2
+hya_01z1          1     hya_02z1          1     hya_03z1          1
+hya_04z1          1     hya_05z1          8     hya_06z1          7
+hya_07z1          1     hya_08z1          1     lia_01z1          1
 lia_02z1          1
 lia_03z1          1
 lia_04z1          1
