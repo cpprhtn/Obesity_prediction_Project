@@ -17,3 +17,5 @@ pd.set_option('display.width', 10000)
 busan_08 = pd.read_csv('busan_08.csv',  encoding = 'cp949')
 
 busan_08.isna().sum()
+
+busan_08.columns
