@@ -2,9 +2,17 @@
 
 ### .txt파일을 .csv파일로 변환
 
+### Data coloumns 확인
+```
+> busan_08.columns
+Out[]:
+Index(['id', 'fma_12z1', 'fma_20z1', 'city_cd', 'bogun_cd', 'jijum_cd', 'gagu_cd', 'gaguw_cd', 'town_t', 'apt_t',
+       ...
+       'i1a_02z1', 'i2a_01z1', 'i2a_02z1', 'i3a_01z1', 'i3a_02z1', 'i4a_01z1', 'i4a_02z1', 'i5a_01z1', 'i5a_02z1', 'h_admincode'], dtype='object', length=505)
+```
 ### 결측치 확인
 ```
-busan_08.isna().sum()
+> busan_08.isna().sum()
 Out[]:
 id                0     fma_12z1         44     fma_20z1         46
 city_cd           0     bogun_cd          0     jijum_cd          0
