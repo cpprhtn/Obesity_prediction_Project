@@ -26,18 +26,10 @@ asa_02z1          2     asa_03z1          2     asa_04z1          2
 hya_01z1          1     hya_02z1          1     hya_03z1          1
 hya_04z1          1     hya_05z1          8     hya_06z1          7
 hya_07z1          1     hya_08z1          1     lia_01z1          1
-lia_02z1          1
-lia_03z1          1
-lia_04z1          1
-lia_05z1          2
-lia_06z1          8
-lia_07z1          1
-lia_08z1          1
-cva_01z1          1
-cva_02z1          1
-cva_03z1          1
-cva_04z1          1
-cva_05z1          1
+lia_02z1          1     lia_03z1          1     lia_04z1          1
+lia_05z1          2     lia_06z1          8     lia_07z1          1
+lia_08z1          1     cva_01z1          1     cva_02z1          1
+cva_03z1          1     cva_04z1          1     cva_05z1          1
 cva_06z1         11
 cva_07z1          2
 cva_08z1          2
