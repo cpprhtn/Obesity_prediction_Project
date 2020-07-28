@@ -1,4 +1,4 @@
-# R_Project
+# Obesity_prediction_Project
 
 R 프로젝트를 기획중이다.
 
