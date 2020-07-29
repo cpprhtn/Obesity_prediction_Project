@@ -8,4 +8,4 @@
 <img width="2048" alt="스크린샷 2020-07-29 오후 6 06 13" src="https://user-images.githubusercontent.com/63298243/88784163-ae887980-d1ca-11ea-90a5-5739fdea4a6e.png">
 <img width="2048" alt="스크린샷 2020-07-29 오후 6 06 19" src="https://user-images.githubusercontent.com/63298243/88784178-b0ead380-d1ca-11ea-9a62-84555510fb78.png">
 <img width="2048" alt="스크린샷 2020-07-29 오후 6 06 25" src="https://user-images.githubusercontent.com/63298243/88784186-b34d2d80-d1ca-11ea-85a3-4839abebbda9.png">
-<img width="2048" alt="스크린샷 2020-07-29 오후 6 06 32" src="https://user-images.githubusercontent.com/63298243/88784196-b5af8780-d1ca-11ea-895d-0b3e2b74a273.png">
+<img width="884" alt="스크린샷 2020-07-29 오후 6 06 32" src="https://user-images.githubusercontent.com/63298243/88785019-a715a000-d1cb-11ea-8f71-b1f33b157569.png">
