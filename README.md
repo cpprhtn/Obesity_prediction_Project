@@ -30,6 +30,6 @@ Start 20.07.24 ~
 |07_27|[Data Transformation 1](./EDA/1차_전처리)|.txt -> .csv|
 |07_28|Theoretical background||
 |ㄴ|[dependent variable, independent variable](./EDA/README.md)||
-|07_29|[Find Common Columns](./data/원시자료 이용지침서 08~18)||
+|07_29|[Find Common Columns](./data/원시자료_이용지침서)||
 |ㄴ|[Pull Only Required Common Columns](./data/README.md)||
 |ㄴ|[Data Transformation 2](./EDA/2차_전처리)|Apply common column |
