@@ -31,4 +31,5 @@ Start 20.07.24 ~
 |07_28|Theoretical background||
 |ㄴ|[dependent variable, independent variable](./EDA/README.md)||
 |07_29|[Find Common Columns](./data/공통_컬럼)||
-|ㄴ|[Data Transformation 2](./EDA/2차_전처리)|필요 공통 컬럼만 뽑기|
+|ㄴ|[Pull Only Required Common Columns](./data/README.md)||
+|ㄴ|[Data Transformation 2](./EDA/2차_전처리)|Apply common column |
