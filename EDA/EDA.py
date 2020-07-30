@@ -46,13 +46,13 @@ b_10.reset_index(inplace = True)
 
 #14년 이후의 형식으로 변환
 b_10['fma_20z1'] = b_10['fma_20z1']/100 + 2
-def kkk(x):
+def fma(x):
     if x<2.5: return 1
     elif x<3: return 2
-    elif x>9: return 9
+    elif x>8: return 8
     else: return math.trunc(x)
         
-b_10['fma_20z1'] = b_10['fma_20z1'].apply(kkk)
+b_10['fma_20z1'] = b_10['fma_20z1'].apply(fma)
 
 
 b_10.rename(columns = {'fma_20z1' : 'fma_24z1'}, inplace = True)
@@ -81,7 +81,7 @@ s_10.reset_index(inplace = True)
 
 s_10['fma_20z1'] = s_10['fma_20z1']/100 + 2
         
-s_10['fma_20z1'] = s_10['fma_20z1'].apply(kkk)
+s_10['fma_20z1'] = s_10['fma_20z1'].apply(fma)
 
 s_10.rename(columns = {'fma_20z1' : 'fma_24z1'}, inplace = True)
 del s_10['index']
