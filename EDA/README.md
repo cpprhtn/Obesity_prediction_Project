@@ -21,7 +21,7 @@ Index(['id', 'fma_12z1', 'fma_20z1', 'city_cd', 'bogun_cd', 'jijum_cd', 'gagu_cd
 **10 ~ 17년 데이터 사용시 원하는 칼럼 모두 사용가능**
 
 - 가구소득(년 기준)이 14년부터 없어지고, 달소득만 남음
-[문제해결 완료](./../data/Different_data _standards/README.md)
+[문제해결 완료](https://github.com/cpprhtn/Obesity_prediction_Project/tree/master/data/Different_data%20_standards)
 
 
 ### 결측치 확인
