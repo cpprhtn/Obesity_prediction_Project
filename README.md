@@ -34,4 +34,4 @@ Start 20.07.24 ~
 |ㄴ|[Pull Only Required Common Columns](./data/README.md)||
 |ㄴ|[Data Transformation 2](./EDA/2차_전처리)|Apply common column |
 |07_30|[Data Transformation 2](./EDA/2차_전처리)|2010 ~ 2014년까지 변환중 데이터의 문제점 발생|
-|ㄴ|[Different data standards before and after 14's](./data/Different_data_standards/README.md)|문제 해결 과정|
+|ㄴ|[Different data standards before and after 14's](https://github.com/cpprhtn/Obesity_prediction_Project/tree/master/data/Different_data%20_standards)|문제 해결 과정|
