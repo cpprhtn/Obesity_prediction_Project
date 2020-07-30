@@ -20,7 +20,7 @@ Index(['id', 'fma_12z1', 'fma_20z1', 'city_cd', 'bogun_cd', 'jijum_cd', 'gagu_cd
 'oba_03z1','mtc_01z1','mta_01z1','mtb_01z1','hya_06z1','dia_06z1','ara_22z1','sod_02z1'
 **10 ~ 17년 데이터 사용시 원하는 칼럼 모두 사용가능**
 
-- 가구소득(년 기준)이 14년부터 없어지고, 달소득만 남음
+- 가구소득(년 기준)이 14년부터 없어지고, 달소득만 남음 <br>
 [문제해결 완료](https://github.com/cpprhtn/Obesity_prediction_Project/tree/master/data/Different_data%20_standards)
 
 
