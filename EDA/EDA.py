@@ -243,17 +243,82 @@ seoul_14 = pd.read_csv('seoul_14.csv',  encoding = 'cp949')
 b_14 = busan_14[['bogun_cd','age','sex','apt_t','fma_19z1','fma_04z1','fma_24z1',
                  'sma_03z2','drb_01z2','pha_04z1','pha_07z1','phb_01z1','nua_01z1',
                  'nub_01z1','oba_01z1','obb_01z1','oba_02z1','oba_03z1','mtc_01z1',
-                 'mta_01z1','mtb_01z1','hya_06z1','dia_06z1','ara_22z1','sod_02z1']]
+                 'mta_01z1','mtb_01z1','hya_06z1','dia_06z1','ara_22z1','sod_02z2']]
 s_14 = seoul_14[['bogun_cd','age','sex','apt_t','fma_19z1','fma_04z1','fma_24z1',
                  'sma_03z2','drb_01z2','pha_04z1','pha_07z1','phb_01z1','nua_01z1',
                  'nub_01z1','oba_01z1','obb_01z1','oba_02z1','oba_03z1','mtc_01z1',
-                 'mta_01z1','mtb_01z1','hya_06z1','dia_06z1','ara_22z1','sod_02z1']]
+                 'mta_01z1','mtb_01z1','hya_06z1','dia_06z1','ara_22z1','sod_02z2']]
 
 b_14.isna().sum()
 s_14.isna().sum()
 
 b_14.to_csv('b_14.csv', index=False)
 s_14.to_csv('s_14.csv', index=False)
+
+
+
+
+
+busan_15 = pd.read_csv('busan_15.csv',  encoding = 'cp949')
+seoul_15 = pd.read_csv('seoul_15.csv',  encoding = 'cp949')
+
+b_15 = busan_15[['bogun_cd','age','sex','apt_t','fma_19z1','fma_04z1','fma_24z1',
+                 'sma_03z2','drb_01z2','pha_04z1','pha_07z1','phb_01z1','nua_01z1',
+                 'nub_01z1','oba_01z1','obb_01z1','oba_02z1','oba_03z1','mtc_01z1',
+                 'mta_01z1','mtb_01z1','hya_06z1','dia_06z1','ara_22z1','sod_02z2']]
+s_15 = seoul_15[['bogun_cd','age','sex','apt_t','fma_19z1','fma_04z1','fma_24z1',
+                 'sma_03z2','drb_01z2','pha_04z1','pha_07z1','phb_01z1','nua_01z1',
+                 'nub_01z1','oba_01z1','obb_01z1','oba_02z1','oba_03z1','mtc_01z1',
+                 'mta_01z1','mtb_01z1','hya_06z1','dia_06z1','ara_22z1','sod_02z2']]
+
+b_15.isna().sum()
+s_15.isna().sum()
+
+b_15.to_csv('b_15.csv', index=False)
+s_15.to_csv('s_15.csv', index=False)
+
+
+
+
+busan_16 = pd.read_csv('busan_16.csv',  encoding = 'cp949')
+seoul_16 = pd.read_csv('seoul_16.csv',  encoding = 'cp949')
+
+b_16 = busan_16[['bogun_cd','age','sex','apt_t','fma_19z1','fma_04z1','fma_24z1',
+                 'sma_03z2','drb_01z2','pha_04z1','pha_07z1','phb_01z1','nua_01z1',
+                 'nub_01z1','oba_01z1','obb_01z1','oba_02z1','oba_03z1','mtc_01z1',
+                 'mta_01z1','mtb_01z1','hya_06z1','dia_06z1','ara_22z1','sod_02z2']]
+s_16 = seoul_16[['bogun_cd','age','sex','apt_t','fma_19z1','fma_04z1','fma_24z1',
+                 'sma_03z2','drb_01z2','pha_04z1','pha_07z1','phb_01z1','nua_01z1',
+                 'nub_01z1','oba_01z1','obb_01z1','oba_02z1','oba_03z1','mtc_01z1',
+                 'mta_01z1','mtb_01z1','hya_06z1','dia_06z1','ara_22z1','sod_02z2']]
+
+b_16.isna().sum()
+s_16.isna().sum()
+
+b_16.to_csv('b_16.csv', index=False)
+s_16.to_csv('s_16.csv', index=False)
+
+
+
+busan_17 = pd.read_csv('busan_17.csv')
+seoul_17 = pd.read_csv('seoul_17.csv')
+
+b_17 = busan_17[['bogun_cd','age','sex','apt_t','fma_19z1','fma_04z1','fma_24z1',
+                 'sma_03z2','drb_01z2','pha_04z1','pha_07z1','phb_01z1','nua_01z1',
+                 'nub_01z1','oba_01z1','obb_01z1','oba_02z1','oba_03z1','mtc_01z1',
+                 'mta_01z1','mtb_01z1','hya_06z1','dia_06z1','ara_22z1','sod_02z2']]
+s_17 = seoul_17[['bogun_cd','age','sex','apt_t','fma_19z1','fma_04z1','fma_24z1',
+                 'sma_03z2','drb_01z2','pha_04z1','pha_07z1','phb_01z1','nua_01z1',
+                 'nub_01z1','oba_01z1','obb_01z1','oba_02z1','oba_03z1','mtc_01z1',
+                 'mta_01z1','mtb_01z1','hya_06z1','dia_06z1','ara_22z1','sod_02z2']]
+
+b_17.isna().sum()
+s_17.isna().sum()
+
+b_17.to_csv('b_17.csv', index=False)
+s_17.to_csv('s_17.csv', index=False)
+
+
 
 
 
