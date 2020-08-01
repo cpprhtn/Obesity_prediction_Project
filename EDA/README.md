@@ -1,7 +1,7 @@
 # EDA 과정
 
-### .txt파일을 .csv파일로 변환
-
+## 1차 전처리
+- .txt파일을 .csv파일로 변환
 ### Data coloumns 확인
 ```
 > busan_08.columns
@@ -20,10 +20,9 @@ Index(['id', 'fma_12z1', 'fma_20z1', 'city_cd', 'bogun_cd', 'jijum_cd', 'gagu_cd
 'oba_03z1','mtc_01z1','mta_01z1','mtb_01z1','hya_06z1','dia_06z1','ara_22z1','sod_02z1'
 **10 ~ 17년 데이터 사용시 원하는 칼럼 모두 사용가능**
 
+## 2차 전처리
 - 가구소득(년 기준)이 14년부터 없어지고, 달소득만 남음 <br>
-[문제해결 완료](https://github.com/cpprhtn/Obesity_prediction_Project/tree/master/data/Different_data%20_standards)
-
-
+[문제해결 완료](https://github.com/cpprhtn/Obesity_prediction_Project/tree/master/data/Different_data%20_standards) <- 보러가기
 ### 결측치 확인
 ```
 > b_17.info()
@@ -58,4 +57,29 @@ Data columns (total 25 columns):
  23  ara_22z1  14521 non-null  int64  
  24  sod_02z2  14521 non-null  int64  
 dtypes: float64(2), int64(23)
+```
+
+## 종속변수 생성
+### BMI 지수 적용
+BMI=몸무게/((키/100)\*\*2)
+```
+def BMI(A):
+    A['Obesity']=A['oba_03z1']/((A['oba_02z1']/100)**2)
+```
+
+### 비만여부 다항변수 처리
+```
+def Oba(x):
+    if x>=25: return 3
+    elif x<18.5: return 1
+    else: return 2
+```
+
+### 전체작업 함수 (기존의 키, 몸무게 칼럼도 제거)
+```
+def Change_Oba(A):
+    BMI(A)
+    A['Obesity'] = A['Obesity'].apply(Oba)
+    del A['oba_03z1']
+    del A['oba_02z1']
 ```
