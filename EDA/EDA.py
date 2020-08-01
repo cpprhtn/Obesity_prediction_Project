@@ -322,3 +322,83 @@ s_17.to_csv('s_17.csv', index=False)
 
 
 
+
+
+
+
+#8/1
+b_10 = pd.read_csv('b_10.csv',  encoding = 'cp949')
+b_11 = pd.read_csv('b_11.csv',  encoding = 'cp949')
+b_12 = pd.read_csv('b_12.csv',  encoding = 'cp949')
+b_13 = pd.read_csv('b_13.csv',  encoding = 'cp949')
+b_14 = pd.read_csv('b_14.csv',  encoding = 'cp949')
+b_15 = pd.read_csv('b_15.csv',  encoding = 'cp949')
+b_16 = pd.read_csv('b_16.csv',  encoding = 'cp949')
+b_17 = pd.read_csv('b_17.csv',  encoding = 'cp949')
+
+s_10 = pd.read_csv('s_10.csv',  encoding = 'cp949')
+s_11 = pd.read_csv('s_11.csv',  encoding = 'cp949')
+s_12 = pd.read_csv('s_12.csv',  encoding = 'cp949')
+s_13 = pd.read_csv('s_13.csv',  encoding = 'cp949')
+s_14 = pd.read_csv('s_14.csv',  encoding = 'cp949')
+s_15 = pd.read_csv('s_15.csv',  encoding = 'cp949')
+s_16 = pd.read_csv('s_16.csv',  encoding = 'cp949')
+s_17 = pd.read_csv('s_17.csv',  encoding = 'cp949')
+
+#'oba_02z1','oba_03z1'
+#키, 몸무게
+def BMI(A):
+    A['Obesity']=A['oba_03z1']/((A['oba_02z1']/100)**2)
+
+        
+def Oba(x):
+    if x>=25: return 3
+    elif x<18.5: return 1
+    else: return 2
+        
+def Change_Oba(A):
+    BMI(A)
+    A['Obesity'] = A['Obesity'].apply(Oba)
+    del A['oba_03z1']
+    del A['oba_02z1']
+    
+    
+Change_Oba(b_10)
+Change_Oba(b_11)
+Change_Oba(b_12)
+Change_Oba(b_13)
+Change_Oba(b_14)
+Change_Oba(b_15)
+Change_Oba(b_16)
+Change_Oba(b_17)
+
+Change_Oba(s_10)
+Change_Oba(s_11)
+Change_Oba(s_12)
+Change_Oba(s_13)
+Change_Oba(s_14)
+Change_Oba(s_15)
+Change_Oba(s_16)
+Change_Oba(s_17)
+
+b_10.to_csv('b_10.csv', index=False)
+b_11.to_csv('b_11.csv', index=False)
+b_12.to_csv('b_12.csv', index=False)
+b_13.to_csv('b_13.csv', index=False)
+b_14.to_csv('b_14.csv', index=False)
+b_15.to_csv('b_15.csv', index=False)
+b_16.to_csv('b_16.csv', index=False)
+b_17.to_csv('b_17.csv', index=False)
+
+s_10.to_csv('s_10.csv', index=False)
+s_11.to_csv('s_11.csv', index=False)
+s_12.to_csv('s_12.csv', index=False)
+s_13.to_csv('s_13.csv', index=False)
+s_14.to_csv('s_14.csv', index=False)
+s_15.to_csv('s_15.csv', index=False)
+s_16.to_csv('s_16.csv', index=False)
+s_17.to_csv('s_17.csv', index=False)
+
+
+
+
