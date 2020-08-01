@@ -26,32 +26,36 @@ Index(['id', 'fma_12z1', 'fma_20z1', 'city_cd', 'bogun_cd', 'jijum_cd', 'gagu_cd
 
 ### 결측치 확인
 ```
-> s_10.isna().sum()
-Out[]:
-bogun_cd    0
-age         0
-sex         0
-apt_t       0
-fma_19z1    1
-fma_04z1    1
-fma_12z1    1
-sma_03z2    0
-drb_01z2    5
-pha_04z1    0
-pha_07z1    0
-phb_01z1    0
-nua_01z1    0
-nub_01z1    0
-oba_01z1    0
-obb_01z1    0
-oba_02z1    0
-oba_03z1    0
-mtc_01z1    0
-mta_01z1    0
-mtb_01z1    0
-hya_06z1    0
-dia_06z1    0
-ara_22z1    0
-sod_02z1    0
-dtype: int64
+> b_17.info()
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 14521 entries, 0 to 14520
+Data columns (total 25 columns):
+ #   Column    Non-Null Count  Dtype  
+---  ------    --------------  -----  
+ 0   bogun_cd  14521 non-null  int64  
+ 1   age       14521 non-null  int64  
+ 2   sex       14521 non-null  int64  
+ 3   apt_t     14521 non-null  int64  
+ 4   fma_19z1  14521 non-null  int64  
+ 5   fma_04z1  14521 non-null  int64  
+ 6   fma_24z1  14521 non-null  int64  
+ 7   sma_03z2  14521 non-null  int64  
+ 8   drb_01z2  14521 non-null  int64  
+ 9   pha_04z1  14521 non-null  int64  
+ 10  pha_07z1  14521 non-null  int64  
+ 11  phb_01z1  14521 non-null  int64  
+ 12  nua_01z1  14521 non-null  int64  
+ 13  nub_01z1  14521 non-null  int64  
+ 14  oba_01z1  14521 non-null  int64  
+ 15  obb_01z1  14521 non-null  int64  
+ 16  oba_02z1  14521 non-null  float64
+ 17  oba_03z1  14521 non-null  float64
+ 18  mtc_01z1  14521 non-null  int64  
+ 19  mta_01z1  14521 non-null  int64  
+ 20  mtb_01z1  14521 non-null  int64  
+ 21  hya_06z1  14521 non-null  int64  
+ 22  dia_06z1  14521 non-null  int64  
+ 23  ara_22z1  14521 non-null  int64  
+ 24  sod_02z2  14521 non-null  int64  
+dtypes: float64(2), int64(23)
 ```
