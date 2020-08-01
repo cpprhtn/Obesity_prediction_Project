@@ -33,13 +33,16 @@ Start 20.07.24 ~
 |07_24|Start Project||
 |07_24|[Data request](./Progress_img/README.md)|[질병관리본부](https://chs.cdc.go.kr/chs/rdr/rdrInfoProcessMain.do)|
 |07_27|[Data Transformation 1](./EDA/1차_전처리)|1차 전처리 완료 (.txt -> .csv)|
+|ㄴ|[EDA 1차 전처리 설명](./EDA)||
 |07_28|Theoretical background||
 |ㄴ|[dependent variable, independent variable](./EDA/README.md)||
 |07_29|[Find Common Columns](./data/원시자료_이용지침서)||
 |ㄴ|[Pull Only Required Common Columns](./data/README.md)||
 |ㄴ|[Data Transformation 2](./EDA/2차_전처리)|Apply common column |
+|ㄴ|[EDA 2차 전처리 설명](./EDA)||
 |07_30|[Data Transformation 2](./EDA/2차_전처리)|2010 ~ 2014년까지 변환중 데이터의 문제점 발생|
 |ㄴ|[Different data standards before and after 14's](https://github.com/cpprhtn/Obesity_prediction_Project/tree/master/data/Different_data%20_standards)|문제 해결 과정|
 |07_31|[Data Transformation 2](./EDA/2차_전처리)|2차 전처리 완료|
 |ㄴ|2010~2013년과 2014 이후의 결혼여부 칼럼명 다른거 수정|sod_02z1 -> sod_02z2|
 |08_01|종속변수 생성|비만여부 칼럼 생성|
+|ㄴ|[EDA 종속변수 생성과정 설명](./EDA)|아래부분으로 스크롤 필요|
