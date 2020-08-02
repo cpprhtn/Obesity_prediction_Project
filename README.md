@@ -30,7 +30,7 @@
 |Date|Description|Remark|
 |:---:|:---|---|
 |07_24|Start Project||
-|07_24|[Data request](./Progress_img/README.md)|[질병관리본부](https://chs.cdc.go.kr/chs/rdr/rdrInfoProcessMain.do)|
+|07_24|[Data request](./Progress_img/README.md)|[질병관리본부](https://chs.cdc.go.kr/chs/rdr/rdrInfoProcessMain.do) 에 자료신청|
 |07_27|[Data Transformation 1](./EDA/1차_전처리)|1차 전처리 완료 (.txt -> .csv)|
 |ㄴ|[EDA 1차 전처리 설명](./EDA)||
 |07_28|Theoretical background||
