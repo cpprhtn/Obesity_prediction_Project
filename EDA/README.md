@@ -83,3 +83,13 @@ def Change_Oba(A):
     del A['oba_03z1']
     del A['oba_02z1']
 ```
+
+
+# 10~13년과 14~17년 칼럼의 동일화
+- R로 처리
+```
+names(b_14) <- names(b_10)
+names(b_15) <- names(b_10)
+names(b_16) <- names(b_10)
+names(b_17) <- names(b_10)
+```
