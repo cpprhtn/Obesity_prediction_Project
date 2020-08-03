@@ -38,6 +38,7 @@ dimnames(pre)=list(NULL,c(pre_value))
 summary(pre)
 
 pred_obs = cbind(naive_busan,pre)
+mean(pred_obs$Underweight)
 write.csv(pred_obs,'Predict_Model/Naive_Bayes/naive_Busan.csv')
 mean_b = read.csv('Predict_Model/Naive_Bayes/naive_Busan.csv',header = T)
 mean(mean_b$Underweight) -> Underweight
@@ -53,7 +54,110 @@ ggplot(df, aes(x=Name,y=Value)) + geom_bar(stat='identity', fill='lightblue',col
   geom_text(aes(label=Value),vjust=2,colour='red', size=5)
 
 
+train_data.lda=naiveBayes(form,data=b_10)
+pre=predict(train_data.lda,b_10,type = 'raw')
+dimnames(pre)=list(NULL,c(pre_value))
+pred_obs = cbind(b_10,pre)
+Under[1] <- mean(pred_obs$Underweight)
+Nor[1] <- mean(pred_obs$Normal)
+Obe[1] <- mean(pred_obs$Obese)
 
+
+
+Underweight = NULL
+Normal = NULL
+Obese = NULL
+
+x = b_10
+train_data.lda=naiveBayes(form,data=x)
+pre=predict(train_data.lda,x,type = 'raw')
+dimnames(pre)=list(NULL,c(pre_value))
+pred_obs = cbind(x,pre)
+print('Done')
+Underweight = c(Underweight,mean(pred_obs$Underweight))
+Normal = c(Normal,mean(pred_obs$Normal))
+Obese = c(Obese,mean(pred_obs$Obese))
+
+x = b_11
+train_data.lda=naiveBayes(form,data=x)
+pre=predict(train_data.lda,x,type = 'raw')
+dimnames(pre)=list(NULL,c(pre_value))
+pred_obs = cbind(x,pre)
+print('Done')
+Underweight = c(Underweight,mean(pred_obs$Underweight))
+Normal = c(Normal,mean(pred_obs$Normal))
+Obese = c(Obese,mean(pred_obs$Obese))
+
+x = b_12
+train_data.lda=naiveBayes(form,data=x)
+pre=predict(train_data.lda,x,type = 'raw')
+dimnames(pre)=list(NULL,c(pre_value))
+pred_obs = cbind(x,pre)
+print('Done')
+Underweight = c(Underweight,mean(pred_obs$Underweight))
+Normal = c(Normal,mean(pred_obs$Normal))
+Obese = c(Obese,mean(pred_obs$Obese))
+
+x = b_13
+train_data.lda=naiveBayes(form,data=x)
+pre=predict(train_data.lda,x,type = 'raw')
+dimnames(pre)=list(NULL,c(pre_value))
+pred_obs = cbind(x,pre)
+print('Done')
+Underweight = c(Underweight,mean(pred_obs$Underweight))
+Normal = c(Normal,mean(pred_obs$Normal))
+Obese = c(Obese,mean(pred_obs$Obese))
+
+x = b_14
+train_data.lda=naiveBayes(form,data=x)
+pre=predict(train_data.lda,x,type = 'raw')
+dimnames(pre)=list(NULL,c(pre_value))
+pred_obs = cbind(x,pre)
+print('Done')
+Underweight = c(Underweight,mean(pred_obs$Underweight))
+Normal = c(Normal,mean(pred_obs$Normal))
+Obese = c(Obese,mean(pred_obs$Obese))
+
+x = b_15
+train_data.lda=naiveBayes(form,data=x)
+pre=predict(train_data.lda,x,type = 'raw')
+dimnames(pre)=list(NULL,c(pre_value))
+pred_obs = cbind(x,pre)
+print('Done')
+Underweight = c(Underweight,mean(pred_obs$Underweight))
+Normal = c(Normal,mean(pred_obs$Normal))
+Obese = c(Obese,mean(pred_obs$Obese))
+
+x = b_16
+train_data.lda=naiveBayes(form,data=x)
+pre=predict(train_data.lda,x,type = 'raw')
+dimnames(pre)=list(NULL,c(pre_value))
+pred_obs = cbind(x,pre)
+print('Done')
+Underweight = c(Underweight,mean(pred_obs$Underweight))
+Normal = c(Normal,mean(pred_obs$Normal))
+Obese = c(Obese,mean(pred_obs$Obese))
+
+x = b_17
+train_data.lda=naiveBayes(form,data=x)
+pre=predict(train_data.lda,x,type = 'raw')
+dimnames(pre)=list(NULL,c(pre_value))
+pred_obs = cbind(x,pre)
+print('Done')
+Underweight = c(Underweight,mean(pred_obs$Underweight))
+Normal = c(Normal,mean(pred_obs$Normal))
+Obese = c(Obese,mean(pred_obs$Obese))
+
+Date = c(2010:2017)
+df = data.frame(Date,Underweight,Normal,Obese)
+
+plot(x=df$Date, y=df$Normal, type = 'o', col = 'black', main = "Busan Obesity Increasing Trend", ylim = c(0,0.8),
+     xlab = "Date", ylab = "Percentage",pch=0, cex =1.2)
+par(new=T)
+plot(x=df$Date, y=df$Obese, type = 'o', col = 'red', ylim = c(0,0.8), xlab = "Date", ylab = "Percentage",pch=2 , cex =1.2)
+par(new=T)
+plot(x=df$Date, y=df$Underweight, type = 'o', col = 'blue', ylim = c(0,0.8), xlab = "Date", ylab = "Percentage",pch=1 , cex =1.2)
+legend(x=2015.64,y=0.83, c("Normal","Obese","Underweight"), cex=1, pch=c(0,2,1),col=c("black","red","blue"))
 
 
 
@@ -66,10 +170,6 @@ read.csv("EDA/종속변수생성/s_15.csv",header = T,fileEncoding = "CP949") ->
 read.csv("EDA/종속변수생성/s_16.csv",header = T,fileEncoding = "CP949") -> s_16
 read.csv("EDA/종속변수생성/s_17.csv",header = T,fileEncoding = "CP949") -> s_17
 
-names(s_14) <- names(s_10)
-names(s_15) <- names(s_10)
-names(s_16) <- names(s_10)
-names(s_17) <- names(s_10)
 
 naive_seoul = rbind(s_10,s_11,s_12,s_13,s_14,s_15,s_16,s_17)
 str(naive_seoul)
@@ -97,4 +197,100 @@ ggplot(df2, aes(x=Name,y=Value)) + geom_bar(stat='identity', fill='lightblue',co
   ggtitle("Naive Bayes Model (Seoul)") + 
   theme(plot.title = element_text(size = 25,hjust = 0.5)) +
   geom_text(aes(label=Value),vjust=2,colour='red', size=5)
+
+
+Underweight = NULL
+Normal = NULL
+Obese = NULL
+
+x = s_10
+train_data.lda=naiveBayes(form,data=x)
+pre=predict(train_data.lda,x,type = 'raw')
+dimnames(pre)=list(NULL,c(pre_value))
+pred_obs = cbind(x,pre)
+print('Done')
+Underweight = c(Underweight,mean(pred_obs$Underweight))
+Normal = c(Normal,mean(pred_obs$Normal))
+Obese = c(Obese,mean(pred_obs$Obese))
+
+x = s_11
+train_data.lda=naiveBayes(form,data=x)
+pre=predict(train_data.lda,x,type = 'raw')
+dimnames(pre)=list(NULL,c(pre_value))
+pred_obs = cbind(x,pre)
+print('Done')
+Underweight = c(Underweight,mean(pred_obs$Underweight))
+Normal = c(Normal,mean(pred_obs$Normal))
+Obese = c(Obese,mean(pred_obs$Obese))
+
+x = s_12
+train_data.lda=naiveBayes(form,data=x)
+pre=predict(train_data.lda,x,type = 'raw')
+dimnames(pre)=list(NULL,c(pre_value))
+pred_obs = cbind(x,pre)
+print('Done')
+Underweight = c(Underweight,mean(pred_obs$Underweight))
+Normal = c(Normal,mean(pred_obs$Normal))
+Obese = c(Obese,mean(pred_obs$Obese))
+
+x = s_13
+train_data.lda=naiveBayes(form,data=x)
+pre=predict(train_data.lda,x,type = 'raw')
+dimnames(pre)=list(NULL,c(pre_value))
+pred_obs = cbind(x,pre)
+print('Done')
+Underweight = c(Underweight,mean(pred_obs$Underweight))
+Normal = c(Normal,mean(pred_obs$Normal))
+Obese = c(Obese,mean(pred_obs$Obese))
+
+x = s_14
+train_data.lda=naiveBayes(form,data=x)
+pre=predict(train_data.lda,x,type = 'raw')
+dimnames(pre)=list(NULL,c(pre_value))
+pred_obs = cbind(x,pre)
+print('Done')
+Underweight = c(Underweight,mean(pred_obs$Underweight))
+Normal = c(Normal,mean(pred_obs$Normal))
+Obese = c(Obese,mean(pred_obs$Obese))
+
+x = s_15
+train_data.lda=naiveBayes(form,data=x)
+pre=predict(train_data.lda,x,type = 'raw')
+dimnames(pre)=list(NULL,c(pre_value))
+pred_obs = cbind(x,pre)
+print('Done')
+Underweight = c(Underweight,mean(pred_obs$Underweight))
+Normal = c(Normal,mean(pred_obs$Normal))
+Obese = c(Obese,mean(pred_obs$Obese))
+
+x = s_16
+train_data.lda=naiveBayes(form,data=x)
+pre=predict(train_data.lda,x,type = 'raw')
+dimnames(pre)=list(NULL,c(pre_value))
+pred_obs = cbind(x,pre)
+print('Done')
+Underweight = c(Underweight,mean(pred_obs$Underweight))
+Normal = c(Normal,mean(pred_obs$Normal))
+Obese = c(Obese,mean(pred_obs$Obese))
+
+x = s_17
+train_data.lda=naiveBayes(form,data=x)
+pre=predict(train_data.lda,x,type = 'raw')
+dimnames(pre)=list(NULL,c(pre_value))
+pred_obs = cbind(x,pre)
+print('Done')
+Underweight = c(Underweight,mean(pred_obs$Underweight))
+Normal = c(Normal,mean(pred_obs$Normal))
+Obese = c(Obese,mean(pred_obs$Obese))
+
+Date = c(2010:2017)
+df = data.frame(Date,Underweight,Normal,Obese)
+
+plot(x=df$Date, y=df$Normal, type = 'o', col = 'black', main = "Seoul Obesity Increasing Trend", ylim = c(0,0.87),
+     xlab = "Date", ylab = "Percentage",pch=0, cex =1.2)
+par(new=T)
+plot(x=df$Date, y=df$Obese, type = 'o', col = 'red', ylim = c(0,0.87), xlab = "Date", ylab = "Percentage",pch=2 , cex =1.2)
+par(new=T)
+plot(x=df$Date, y=df$Underweight, type = 'o', col = 'blue', ylim = c(0,0.87), xlab = "Date", ylab = "Percentage",pch=1 , cex =1.2)
+legend(x=2015.64,y=0.904, c("Normal","Obese","Underweight"), cex=1, pch=c(0,2,1),col=c("black","red","blue"))
 
