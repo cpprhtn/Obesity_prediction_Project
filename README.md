@@ -47,3 +47,5 @@
 |ㄴ|[EDA 종속변수 생성과정 설명](./EDA)|아래로 스크롤 필요|
 |08_02|[Naive Bayes Model](./Predict_Model)|R로 제작|
 |ㄴ|[]결혼여부 칼럼명을 sod_02z1 칼럼으로 일치화시킴](./EDA/README.md)|아래로 스크롤 필요|
+|08_03|[Naive Bayes Model Visualization](./Predict_Model)||
+|ㄴ|Naive Bayes Model Finish|나이브 베이즈 모델 완료|
