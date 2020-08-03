@@ -66,10 +66,6 @@ read.csv("EDA/종속변수생성/s_15.csv",header = T,fileEncoding = "CP949") ->
 read.csv("EDA/종속변수생성/s_16.csv",header = T,fileEncoding = "CP949") -> s_16
 read.csv("EDA/종속변수생성/s_17.csv",header = T,fileEncoding = "CP949") -> s_17
 
-names(s_14) <- names(s_10)
-names(s_15) <- names(s_10)
-names(s_16) <- names(s_10)
-names(s_17) <- names(s_10)
 
 naive_seoul = rbind(s_10,s_11,s_12,s_13,s_14,s_15,s_16,s_17)
 str(naive_seoul)
