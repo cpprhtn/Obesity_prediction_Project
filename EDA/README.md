@@ -92,4 +92,9 @@ names(b_14) <- names(b_10)
 names(b_15) <- names(b_10)
 names(b_16) <- names(b_10)
 names(b_17) <- names(b_10)
+
+names(s_14) <- names(s_10)
+names(s_15) <- names(s_10)
+names(s_16) <- names(s_10)
+names(s_17) <- names(s_10)
 ```

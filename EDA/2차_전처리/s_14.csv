@@ -1,4 +1,4 @@
-bogun_cd,age,sex,apt_t,fma_19z1,fma_04z1,fma_24z1,sma_03z2,drb_01z2,pha_04z1,pha_07z1,phb_01z1,nua_01z1,nub_01z1,oba_01z1,obb_01z1,oba_02z1,oba_03z1,mtc_01z1,mta_01z1,mtb_01z1,hya_06z1,dia_06z1,ara_22z1,sod_02z2
+bogun_cd,age,sex,apt_t,fma_19z1,fma_04z1,fma_24z1,sma_03z2,drb_01z2,pha_04z1,pha_07z1,phb_01z1,nua_01z1,nub_01z1,oba_01z1,obb_01z1,oba_02z1,oba_03z1,mtc_01z1,mta_01z1,mtb_01z1,hya_06z1,dia_06z1,ara_22z1,sod_02z1
 1,35,2,1,11,3,5,3,4,3,3,4,5,3,4,1,170.0,67.0,8,4,2,8,8,8,1
 1,33,1,1,11,3,5,3,8,5,0,0,7,4,2,3,181.0,68.0,5,3,2,8,8,8,1
 1,72,1,1,11,1,2,8,8,0,0,7,7,3,3,1,168.0,75.0,6,3,2,8,8,8,1
