@@ -45,3 +45,37 @@ ggplot(df, aes(x=Name,y=Value)) + geom_bar(stat='identity', fill='lightyellow',c
   theme(plot.title = element_text(size = 25,hjust = 0.5)) +
   geom_text(aes(label=Value),vjust=2,colour='red', size=5)
 
+
+
+
+read.csv("EDA/종속변수생성/s_10.csv",header = T,fileEncoding = "CP949") -> s_10
+read.csv("EDA/종속변수생성/s_11.csv",header = T,fileEncoding = "CP949") -> s_11
+read.csv("EDA/종속변수생성/s_12.csv",header = T,fileEncoding = "CP949") -> s_12
+read.csv("EDA/종속변수생성/s_13.csv",header = T,fileEncoding = "CP949") -> s_13
+read.csv("EDA/종속변수생성/s_14.csv",header = T,fileEncoding = "CP949") -> s_14
+read.csv("EDA/종속변수생성/s_15.csv",header = T,fileEncoding = "CP949") -> s_15
+read.csv("EDA/종속변수생성/s_16.csv",header = T,fileEncoding = "CP949") -> s_16
+read.csv("EDA/종속변수생성/s_17.csv",header = T,fileEncoding = "CP949") -> s_17
+
+logistic_seoul = rbind(s_10,s_11,s_12,s_13,s_14,s_15,s_16,s_17)
+
+i_logistic = multinom(form, data=logistic_seoul)
+
+pre = predict(i_logistic, logistic_seoul, type = 'probs')
+dimnames(pre)=list(NULL,c(pre_value))
+summary(pre)
+
+pred_obs = cbind(logistic_seoul,pre)
+write.csv(pred_obs,'Predict_Model/Logistic_Regression/logistic_Seoul.csv')
+mean_s = read.csv('Predict_Model/Logistic_Regression/logistic_Seoul.csv',header = T)
+mean(mean_s$Underweight) -> Underweight
+mean(mean_s$Normal) -> Normal
+mean(mean_s$Obese) -> Obese
+Name = c('Underweight','Normal','Obese')
+Value = c(Underweight,Normal,Obese)
+df2 = data.frame(Name,Value)
+
+ggplot(df2, aes(x=Name,y=Value)) + geom_bar(stat='identity', fill='lightyellow',colour='black') +
+  ggtitle("Logistic Regression Model (Seoul)") + 
+  theme(plot.title = element_text(size = 25,hjust = 0.5)) +
+  geom_text(aes(label=Value),vjust=2,colour='red', size=5)
