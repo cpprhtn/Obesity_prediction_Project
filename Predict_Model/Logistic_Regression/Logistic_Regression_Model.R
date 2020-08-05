@@ -79,3 +79,32 @@ ggplot(df2, aes(x=Name,y=Value)) + geom_bar(stat='identity', fill='lightyellow',
   ggtitle("Logistic Regression Model (Seoul)") + 
   theme(plot.title = element_text(size = 25,hjust = 0.5)) +
   geom_text(aes(label=Value),vjust=2,colour='red', size=5)
+
+
+
+Underweight = NULL
+Normal = NULL
+Obese = NULL
+
+x = s_17
+i_logistic = multinom(form, data=x)
+pre = predict(i_logistic, x, type = 'probs')
+dimnames(pre)=list(NULL,c(pre_value))
+pred_obs = cbind(x,pre)
+print('Loading')
+Underweight = c(Underweight,mean(pred_obs$Underweight))
+Normal = c(Normal,mean(pred_obs$Normal))
+Obese = c(Obese,mean(pred_obs$Obese))
+print('Done')
+
+
+Date = c(2010:2017)
+df = data.frame(Date,Underweight,Normal,Obese)
+
+plot(x=df$Date, y=df$Normal, type = 'o', col = 'black', main = "Seoul Obesity Increasing Trend", ylim = c(0,0.8),
+     xlab = "Date", ylab = "Percentage",pch=0, cex =1.2)
+par(new=T)
+plot(x=df$Date, y=df$Obese, type = 'o', col = 'red', ylim = c(0,0.8), xlab = "Date", ylab = "Percentage",pch=2 , cex =1.2)
+par(new=T)
+plot(x=df$Date, y=df$Underweight, type = 'o', col = 'blue', ylim = c(0,0.8), xlab = "Date", ylab = "Percentage",pch=1 , cex =1.2)
+legend(x=2015.64,y=0.83, c("Normal","Obese","Underweight"), cex=1, pch=c(0,2,1),col=c("black","red","blue"))
