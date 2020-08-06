@@ -27,3 +27,23 @@
 > Underweight
 [1] 0.11264411 0.14245434 0.07915427 0.08322619 0.05879953 0.10013501 0.06861748 0.09058465
 ```
+
+## Logistic Regression Model
+### 2010년부터 2017년도 전체의 평균 비만도 예측
+#### 서울
+![Logistic Seoul](https://user-images.githubusercontent.com/63298243/89545450-5393f980-d83e-11ea-90ef-b07917b34941.jpeg)
+
+#### 부산
+![Logistic Busan](https://user-images.githubusercontent.com/63298243/89545459-57278080-d83e-11ea-9d94-1a4fcbd6bc35.jpeg)
+
+### 2010 ~ 2017년의 비만 증가 추세
+#### 서울
+![Seoul Increasing Trend(logistic)](https://user-images.githubusercontent.com/63298243/89545476-5d1d6180-d83e-11ea-9295-af2641687ed8.jpeg)
+```
+NULL
+```
+#### 부산
+![Busan Increasing Trend(logistic)](https://user-images.githubusercontent.com/63298243/89545467-5a227100-d83e-11ea-9835-1ad8c2156863.jpeg)
+```
+NULL
+```
