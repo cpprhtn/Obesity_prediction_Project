@@ -51,3 +51,4 @@
 |ㄴ|Naive Bayes Model Finish|나이브 베이즈 모델 완료|
 |08_04|[Logistic Regression Model](./Predict_Model)|R로 제작|
 |08_05|Finish Logistic Regression Model|모델 제작 완료|
+|08_06|[Random Forest Model](./Predict_Model)|R로 제작|
