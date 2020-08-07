@@ -47,3 +47,16 @@ NULL
 ```
 NULL
 ```
+
+## Random Forest Model
+### 2010년부터 2017년도 전체의 평균 비만도 예측
+- 에러가 뜸,,, ---아직 해결 못함
+```
+b_10.rf = randomForest(form, data= b_10, forest=FALSE, importance=TRUE)
+Warning message:
+In randomForest.default(m, y, ...) :
+  The response has five or fewer unique values.  Are you sure you want to do regression?
+> pre = predict(b_10.rf,b_10, type='prob')
+Error in predict.randomForest(b_10.rf, b_10, type = "prob") :
+  'prob' or 'vote' not meaningful for regression
+```
