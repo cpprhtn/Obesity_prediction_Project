@@ -35,6 +35,7 @@ input_value = c(colnames(input))
 output_value = c(colnames(output))
 form = as.formula(paste(paste(output_value, collapse = '+'),'~',paste(input_value, collapse = '+')))
 
+
 i_ctree = ctree(form,dt_busan)
 pre_Normal = sapply(predict(i_ctree,dt_busan,type='prob'),'[[',2)
 pre_Obese = sapply(predict(i_ctree,dt_busan,type='prob'),'[[',3)
