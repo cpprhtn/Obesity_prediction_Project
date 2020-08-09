@@ -1,7 +1,6 @@
 rm(list=ls())
 
 library(MASS)
-install.packages('party')
 library(party)
 library(ggplot2)
 setwd("/Users/cpprhtn/Desktop/git_local/Obesity_prediction_project")
@@ -20,9 +19,16 @@ dt_busan = rbind(b_10,b_11,b_12,b_13,b_14,b_15,b_16,b_17)
 
 #다항의 decision tree model로 예층하기위해서 종속변수의 범주는 string format를 주기로 함
 #1=G_underweight, 2=G_normal, 3=G_obesity
-dt_busan[,"Multinomial"] <- 0
-
-
+dt_busan[,"Multinomial"] <- 'G_obesity'
+for (i in 1:109314){
+  if (dt_busan$Obesity[i] == 1){
+    dt_busan$Multinomial[i] <- 'G_underweight'
+  }
+  else if (dt_busan$Obesity[i] == 2){
+    dt_busan$Multinomial[i] <- 'G_normal'
+  }
+}
+str(dt_busan$Multinomial)
 read.csv("Predict_Model/input_columns.csv",header = T, sep = ',') -> input
 read.csv("Predict_Model/output_multinomial.csv",header = T,sep=',') -> output
 input_value = c(colnames(input))
