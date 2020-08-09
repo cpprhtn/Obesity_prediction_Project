@@ -22,6 +22,7 @@ dt_busan = rbind(b_10,b_11,b_12,b_13,b_14,b_15,b_16,b_17)
 #1=G_underweight, 2=G_normal, 3=G_obesity
 dt_busan[,"Multinomial"] <- 0
 
+
 read.csv("Predict_Model/input_columns.csv",header = T, sep = ',') -> input
 read.csv("Predict_Model/output_multinomial.csv",header = T,sep=',') -> output
 input_value = c(colnames(input))
