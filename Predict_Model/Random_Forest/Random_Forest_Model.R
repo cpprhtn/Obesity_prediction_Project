@@ -29,6 +29,6 @@ for (i in 1:24) {
 form
 busan.rf = randomForest(form, data= busan, forest=FALSE, importance=TRUE)
 
-pre = predict(b_10.rf,b_10, type='prob')
+pre = predict(busan.rf,busan, type='prob')
 dimnames(pre)=list(NULL,c(pre_value))
 summary(pre)
