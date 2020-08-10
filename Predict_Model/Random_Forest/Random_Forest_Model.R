@@ -21,12 +21,13 @@ read.csv("EDA/종속변수생성/b_15.csv",header = T,fileEncoding = "CP949") ->
 read.csv("EDA/종속변수생성/b_16.csv",header = T,fileEncoding = "CP949") -> b_16
 read.csv("EDA/종속변수생성/b_17.csv",header = T,fileEncoding = "CP949") -> b_17
 
-rf_busan = rbind(b_10,b_11,b_12,b_13,b_14,b_15,b_16,b_17)
+busan = rbind(b_10,b_11,b_12,b_13,b_14,b_15,b_16,b_17)
 str(rf_busan)
 for (i in 1:24) {
   rf_busan[,i] <-factor(rf_busan[,i]) 
 }
-b_10.rf = randomForest(form, data= b_10, forest=FALSE, importance=TRUE)[,2]
+form
+busan.rf = randomForest(form, data= busan, forest=FALSE, importance=TRUE)
 
 pre = predict(b_10.rf,b_10, type='prob')
 dimnames(pre)=list(NULL,c(pre_value))
