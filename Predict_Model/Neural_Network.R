@@ -23,7 +23,7 @@ read.csv("Predict_Model/output_multinomial.csv",header = T,sep=',') -> pre_outpu
 input_value = c(colnames(input))
 output_value = c(colnames(output))
 form = as.formula(paste(paste(output_value, collapse = '+'),'~',paste(input_value, collapse = '+')))
-
+form
 pre_value = c(colnames(pre_output))
 
 tr.nnet = nnet(form, data = busan, size = 7)
