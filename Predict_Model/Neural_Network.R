@@ -18,8 +18,8 @@ busan = rbind(b_10,b_11,b_12,b_13,b_14,b_15,b_16,b_17)
 
 
 read.csv("Predict_Model/input_columns.csv",header = T, sep = ',') -> input
-read.csv("Predict_Model/output_columns.csv",header = T,sep=',') -> output
-read.csv("Predict_Model/output_multinomial.csv",header = T,sep=',') -> pre_output
+read.csv("Predict_Model/output_multinomial.csv",header = T,sep=',') -> output
+read.csv("Predict_Model/pre_output_nultinumial_random.csv",header = T,sep=',') -> pre_output
 input_value = c(colnames(input))
 output_value = c(colnames(output))
 form = as.formula(paste(paste(output_value, collapse = '+'),'~',paste(input_value, collapse = '+')))
@@ -31,3 +31,5 @@ p = predict(tr.nnet, busan, type = 'raw')
 dimnames(p) = list(NULL,c(pre_output))
 pred_obs = cbind(busan, p)
 summary(p)
+
+mean(pred_obs$)
