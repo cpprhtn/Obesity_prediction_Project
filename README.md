@@ -71,3 +71,12 @@ Name: Obesity, dtype: int64
 |08_04|[Logistic Regression Model](./Predict_Model)|R로 제작|
 |08_05|Finish Logistic Regression Model|모델 제작 완료|
 |08_06|[Random Forest Model](./Predict_Model)|R로 제작|
+|ㄴ|Error 발생|해결중|
+|08_07|[Decision Tree Model](./Predict_Model)|R로 제작|
+|ㄴ|randomForest와 동일한 Error 발생|해결중|
+|08_09|[Error 이유 찾음](./Predict_Model)||
+|ㄴ|신경망 모델도 동일한 Error||
+|08_11|다양한 방법으로 시도|Error해결중|
+|08_12|두 모델 중단||
+|08_14|[Decision Tree Model](./Predict_Model/Decision_Tree/Decision_Tree_Model.py)|python으로 시도|
+|ㄴ|예측률 100%||
