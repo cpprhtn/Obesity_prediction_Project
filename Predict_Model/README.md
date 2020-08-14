@@ -50,7 +50,8 @@ NULL
 
 ## Random Forest Model
 ### 2010년부터 2017년도 전체의 평균 비만도 예측
-- 에러가 뜸,,, ---아직 해결 못함
+- 각 칼럼의 종류가 5개가 넘어서 오류가 뜸
+- 원-핫 인코딩을 시도했으나 에러가 계속 나옴
 ```
 b_10.rf = randomForest(form, data= b_10, forest=FALSE, importance=TRUE)
 Warning message:
@@ -60,3 +61,5 @@ In randomForest.default(m, y, ...) :
 Error in predict.randomForest(b_10.rf, b_10, type = "prob") :
   'prob' or 'vote' not meaningful for regression
 ```
+## Decision Tree Model
+- Random Forest와 이하 동일
