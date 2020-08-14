@@ -32,4 +32,5 @@ dimnames(p) = list(NULL,c(pre_output))
 pred_obs = cbind(busan, p)
 summary(p)
 
-mean(pred_obs$)
+mean(pred_obs)
+
