@@ -80,3 +80,4 @@ Name: Obesity, dtype: int64
 |08_12|두 모델 중단||
 |08_14|[Decision Tree Model](./Predict_Model/Decision_Tree/Decision_Tree_Model.py)|python으로 시도|
 |ㄴ|예측률 100%||
+|08_16|readme 정리||
