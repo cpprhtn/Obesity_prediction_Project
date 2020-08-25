@@ -1,7 +1,8 @@
 # Obesity_prediction_Project
 
 **원시자료는 원칙에 따라 미공개 예정**
-### [질병관리본부](https://chs.cdc.go.kr/chs/rdr/rdrInfoProcessMain.do) 에 직접 자료신청 바람
+**[질병관리본부](https://chs.cdc.go.kr/chs/rdr/rdrInfoProcessMain.do) 에 직접 자료신청 바람**
+**[데이터 요청과정 보기](./Progress_img/README.md)**
 ## 시작하게된 계기
 코로나 사태가 지속됨에 따라 외부 활동량이 줄면서 살 찌는 사람이 늘어났다.<br>
 여러 커뮤니티에는 확찐자라는 말이 돌아다니고 있다.<br>
