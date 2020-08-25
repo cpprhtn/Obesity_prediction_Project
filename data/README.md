@@ -1,3 +1,5 @@
+# 원시자료는 원칙에 따라 미공개 예정
+### [질병관리본부](https://chs.cdc.go.kr/chs/rdr/rdrInfoProcessMain.do) 에 직접 자료신청 바람
 #공통 컬럼 찾기
 <img width="2048" alt="스크린샷 2020-07-29 오후 6 05 38" src="https://user-images.githubusercontent.com/63298243/88784081-94e73200-d1ca-11ea-8fcd-05f0051ff35f.png">
 <img width="2048" alt="스크린샷 2020-07-29 오후 6 05 45" src="https://user-images.githubusercontent.com/63298243/88784099-9add1300-d1ca-11ea-8267-d638bed9f97f.png">
